@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActiviteTrois"
+    android:stretchColumns="0,1,2"
+    >
+
+    <TableRow>
+        <Button
+            android:text="b1"
+            >
+
+        </Button>
+        <Button
+            android:text="b2"
+            >
+
+        </Button>
+        <Button
+            android:text="b3"
+            >
+
+        </Button>
+    </TableRow>
+    <TableRow>
+
+        <Button
+            android:text="b1"
+            >
+
+        </Button>
+        <Button
+            android:text="b2"
+            >
+
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="b3"
+            android:layout_column="2"
+            >
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="b2"
+            android:layout_column="1"
+            >
+
+        </Button>
+        <Button
+            android:text="b3"
+            android:layout_column="2"
+            >
+
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="b1"
+            android:layout_span="3"
+            >
+
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="b1"
+            android:layout_column="1"
+            android:layout_span="2"
+            >
+
+        </Button>
+    </TableRow>
+    <TableRow>
+        <Button
+            android:text="b1"
+            android:layout_weight="1"
+            >
+
+        </Button>
+        <Button
+            android:text="b2"
+            android:layout_weight="1"
+            >
+
+        </Button>
+    </TableRow>
+</TableLayout>
