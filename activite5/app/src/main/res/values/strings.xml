@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">activite5</string>
+    <string name="dispay"> Tapez une operation </string>
 </resources>
