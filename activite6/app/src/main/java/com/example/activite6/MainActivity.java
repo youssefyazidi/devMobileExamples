@@ -9,7 +9,7 @@ import android.widget.ListView;
 public class MainActivity extends AppCompatActivity {
 
     String[] planets= new String[]{
-                "Mercury",
+            "Mercury",
             "Venus",
             "Earth",
             "Mars",
@@ -25,9 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         liste1 =  findViewById(R.id.liste1);
-
         //Adapter predefini pour les listes simples
         ArrayAdapter adapter=new
                 ArrayAdapter(this, R.layout.liste_element,planets);
