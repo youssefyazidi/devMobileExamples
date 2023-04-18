@@ -14,7 +14,7 @@ public class CityActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_city);
 
-        textviewnompays = findViewById(R.id.textviewPays);
+        textviewnompays = findViewById(R.id.nompaysEdittext);
 
         Intent intent = getIntent();
         String nompays= intent.getStringExtra("country");

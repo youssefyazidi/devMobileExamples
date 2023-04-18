@@ -1,15 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".CityActivity">
 
-    <TextView
-        android:id="@+id/textviewPays"
-        android:layout_width="wrap_content"
+    <include
+        android:id="@+id/header"
+        layout="@layout/header"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        ></include>
+
+    <ImageView
+        android:id="@+id/cityimageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/header"
+        android:scaleType="fitXY"
+        android:src="@drawable/casablanca"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/citynametextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Casablanca"
+        android:layout_below="@+id/cityimageView"
+        android:layout_alignLeft="@id/cityimageView"
+        style="@style/namecitystyle"
         ></TextView>
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/brefdesccitytextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/casasmalldesc"
+        android:layout_below="@+id/citynametextview"
+        style="@style/brefdesccitystyle"
+        android:layout_alignLeft="@+id/citynametextview"
+        android:layout_alignStart="@id/citynametextview"
+        ></TextView>
+    
+    <TextView
+        android:id="@+id/hbtextview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brefdesccitytextview"
+        android:text="Habitants : 4 000 000"
+        style="@style/hbcitystyle"
+        ></TextView>
+
+    <Button
+        android:id="@+id/btnInfos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hbtextview"
+        android:text="Infos...."
+        ></Button>
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        ></Button>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:layout_above="@+id/btnnext"
+        ></Button>
+</RelativeLayout>
