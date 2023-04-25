@@ -1,4 +1,4 @@
-package com.example.activite7;
+package com.example.activite7.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.example.activite7.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startExploring(String name)
     {
-        Intent intent =new Intent(this,CityActivity.class);
+        Intent intent =new Intent(this, CityActivity.class);
         intent.putExtra("country", name);
         startActivity(intent);
     }
