@@ -29,4 +29,26 @@
         android:text="Ecrire le fichier"
         ></Button>
 
+
+    <EditText
+        android:id="@+id/edittextfiletoread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom de fichier"
+        android:textSize="26sp"
+        ></EditText>
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lire le fichier"
+        ></Button>
+
+    <TextView
+        android:id="@+id/textviewread"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        ></TextView>
 </LinearLayout>
