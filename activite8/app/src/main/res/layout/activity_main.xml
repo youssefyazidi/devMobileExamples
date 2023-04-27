@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textviewusername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user name  :"
+        android:textSize="26sp"
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edittextusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User name "
+        android:textSize="26sp"
+        android:textColor="#FF0000"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/textviewusername"
+        android:layout_alignBaseline="@+id/textviewusername"
+        >
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/textviewpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password  :"
+        android:layout_margin="10dp"
+        android:textSize="26sp"
+        android:layout_below="@+id/textviewusername"
+        />
+
+    <EditText
+        android:id="@+id/edittextpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password "
+        android:textSize="26sp"
+        android:textColor="#FF0000"
+        android:layout_margin="10dp"
+        android:inputType="textPassword"
+        android:layout_toRightOf="@+id/textviewpassword"
+        android:layout_alignBaseline="@+id/textviewpassword"
+        android:layout_alignLeft="@+id/edittextusername"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnvalider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="valider"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/textviewpassword"
+        android:layout_centerHorizontal="true"
+        ></Button>
+</RelativeLayout>
