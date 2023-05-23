@@ -43,6 +43,8 @@ public class ManageCities {
 
         cities.put("Maroc", maroc);
 
+        ArrayList<City> algerie=new ArrayList<>();
+
     }
 
 

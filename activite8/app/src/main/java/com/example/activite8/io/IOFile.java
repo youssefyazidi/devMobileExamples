@@ -22,8 +22,8 @@ public class IOFile {
 
                 file.createNewFile();
             }
-//l'operation d'ecriture
-            //ouverture de fichier en mode write
+              //l'operation d'ecriture
+             //ouverture de fichier en mode write
             FileWriter fw=new FileWriter(file);
             fw.write(contenu);
             fw.close();

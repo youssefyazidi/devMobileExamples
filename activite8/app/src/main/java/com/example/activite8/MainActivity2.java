@@ -3,6 +3,7 @@ package com.example.activite8;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,11 +53,24 @@ public class MainActivity2 extends AppCompatActivity {
 
                 //Versions nouvelles
                 //Espace interne
-                File file=new File(getFilesDir(),fname+".txt");
+              /*  File file=new File(getFilesDir(),fname+".txt");
                 IOFile iofile =new IOFile();
                 iofile.writeFile(file,contenu);
                 Toast.makeText(MainActivity2.this,
+                        "fichier crée", Toast.LENGTH_SHORT).show();*/
+
+                //Espace externe
+               // File file=new File(getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS),fname+".txt");
+                /*File file=new
+                        File(getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS),fname+".txt");*/
+               File file2= new
+                        File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS),
+                        fname+".txt");
+                IOFile iofile =new IOFile();
+                iofile.writeFile(file2,contenu);
+                Toast.makeText(MainActivity2.this,
                         "fichier crée", Toast.LENGTH_SHORT).show();
+
             }
         });
 
@@ -66,9 +80,18 @@ public class MainActivity2 extends AppCompatActivity {
                 String fname= edittextfiletoread.getText().toString();
                 String contenu= "";
                 IOFile iofile =new IOFile();
-                File file=new File(getFilesDir(),fname+".txt");
+              /*  File file=new File(getFilesDir(),fname+".txt");
                contenu = iofile.readFile(file);
-               textviewread.setText(contenu);
+               textviewread.setText(contenu);*/
+
+               /* File file=new File(getExternalFilesDir(Environment.DIRECTORY_DOCUMENTS),fname+".txt");
+               */
+                File file2= new
+                        File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS),
+                        fname+".txt");
+                contenu = iofile.readFile(file2);
+                textviewread.setText(contenu);
+
             }
         });
     }
